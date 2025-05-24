@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marsaiah Beach Retreat – Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #006666;
+    }
+    form {
+      max-width: 500px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #009999;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #007777;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Marsaiah Beach Retreat – Booking Request</h1>
+
+<form action="https://formspree.io/f/xvganjvd" method="POST">
+  <label>Name:
+    <input type="text" name="name" required>
+  </label>
+
+  <label>Email:
+    <input type="email" name="email" required>
+  </label>
+
+  <label>Room:
+    <select name="room" required>
+      <option value="Room 1">Room 1</option>
+      <option value="Room 2">Room 2</option>
+      <option value="Room 3">Room 3</option>
+    </select>
+  </label>
+
+  <label>Check-in Date:
+    <input type="date" name="checkin" required>
+  </label>
+
+  <label>Check-out Date:
+    <input type="date" name="checkout" required>
+  </label>
+
+  <label>Additional Notes:
+    <textarea name="notes" rows="4"></textarea>
+  </label>
+
+  <button type="submit">Request Booking</button>
+</form>
+
+</body>
+</html>
